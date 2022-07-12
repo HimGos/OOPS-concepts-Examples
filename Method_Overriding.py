@@ -13,6 +13,7 @@ class IneuronHQ1:
         print("HQ1 of Ineuron is in Bengaluru.")
 
     def location(self):
+        """This function tells the location on HQ"""
         print("Address: 17 A, Bridge Signature Towers")
 
 
@@ -23,6 +24,7 @@ class IneuronHQ2(IneuronHQ1):
         print("HQ2 of Ineuron is in Delhi.")
 
     def location(self):
+        """This function tells the location on HQ"""
         print("Address: J-11, Connaught Place")
         super().__init__()
 
@@ -45,9 +47,11 @@ class IneuronCourses(Ineuron):
         print("\nHere we get to know about courses in Ineuron")
 
     def course_categories(self):
+        """This function tells course categories within IneuronCourses class"""
         print("Ineuron has over 300 courses in various categories")
 
     def packages(self):
+        """This function tells the packages info within IneuronCourses class"""
         print("Ineuron only has OneNeuron Package")
 
 try:
@@ -65,6 +69,7 @@ except Exception as e:
 class IneuronPackage(IneuronCourses):
 
     def packages(self):
+        """This function tells the packages info within IneuronPackage class"""
         print("Ineuron has OneNeuron and Kids Neuron as well.\n")
 
 try:
@@ -87,6 +92,7 @@ class IneuronMentors:
         print("Init of grandparent class")
 
     def totalmentors(self):
+        """This function tells the total mentors within IneuronMentors class"""
         print("There are overall 25 mentors in Ineuron.")
 
 
@@ -98,6 +104,7 @@ class OneNeuronMentors(IneuronMentors):
         super().__init__()
 
     def totalmentors(self):
+        """This function tells the total mentors within OneNeuronMentors class"""
         print("There are 17 mentors for OneNeuron")
 
 
@@ -108,6 +115,7 @@ class KidsNeuronMentors(OneNeuronMentors):
         print("Init of Child Class")
 
     def totalmentors(self):
+        """This function tells the total mentors within KidsNeuronMentors class"""
         print("Kids Neuron has 8 mentors.")
         super().__init__()
 
@@ -129,18 +137,21 @@ class AffiliateMarketing:
         print("\nWelcome to Affiliate Marketing")
 
     def commission(self):
+        """This function tells the commissions within AffiliateMarketing class"""
         print("Physical product commission is less than 10%")
 
 
 class OnlineMarketing(AffiliateMarketing):
 
     def commission(self):
+        """This function tells the commissions within OnlineMarketing class"""
         print("Digital product commission is more than 10%")
 
 
 class IneuronAff(OnlineMarketing):
 
     def commission(self):
+        """This function tells the commissions within IneuronAff class"""
         print("Ineuron provides 20% commission on each sale!")
 
 try:
@@ -159,18 +170,21 @@ except Exception as e:
 class Jobs:
 
     def intro(self):
+        """This function tells the intro within Jobs class"""
         print("There are thousands of types of jobs in the world")
 
 
 class OnlineJobs:
 
     def onlinejob(self):
+        """This function tells the online jobs within OnlineJobs class"""
         print("\nOnline jobs are at boom currently!")
 
 
 class IneuronJobs(Jobs,OnlineJobs):
 
     def intro(self):
+        """This function tells the intro within IneuronJobs class"""
         print("Ineuron has Job Guarantee Program\n")
 
 try:
@@ -193,6 +207,7 @@ class Internship:
         print("Internship is very important for a fresher.")
 
     def intern(self):
+        """This function tells the internship within Internship class"""
         print("There are two types of internships, Paid and Unpaid")
 
 
@@ -203,12 +218,14 @@ class FreeCodeCamp:
         print("Free Code Camp provides unpaid internship")
 
     def duration(self):
+        """This function tells the duration within FreeCodeCamp class"""
         print("Duration of internship in FCC is 6 months")
 
 
 class IneuronIntern(Internship,FreeCodeCamp):
 
     def duration(self):
+        """This function tells the duration within IneuronIntern class"""
         print("Duration of internship in Ineuron is 8 months")
         super().__init__()
 
@@ -232,6 +249,7 @@ class FinanceDept:
         print("India's Finance Department has budget in Billions.")
 
     def budget(self):
+        """This function tells the budget within FinanceDept class"""
         print("National education budget is 367cr.")
 
 
@@ -243,12 +261,14 @@ class IneuronFinance:
         super().__init__()
 
     def finance(self):
+        """This function tells the finances within IneuronFinance class"""
         print("Ineuron spends $100K every year on technology")
 
 
 class IneuronKidsSection(IneuronFinance,FinanceDept):
 
     def budget(self):
+        """This function tells the budget within IneuronKidsSection class"""
         print("Inueron has a budget of $200K for Kids Neuron.")
         super().__init__()
 
@@ -274,6 +294,7 @@ class IneuronEducation:
         super().__init__()
 
     def education(self):
+        """This function tells the motto within IneuronEducation class"""
         print("Motto of Ineuron: Make Education Affordable & Accessible to everyone")
 
 
@@ -285,6 +306,7 @@ class CoursesIneuron:
         super().__init__()
 
     def fsdsbootcamp(self):
+        """This function tells the bootcamps within CoursesIneuron class"""
         print("There is no fsds bootcamp in ineuron")
 
 
@@ -296,12 +318,14 @@ class BootcampsIneuron:
         super().__init__()
 
     def fsdsbootcamp(self):
+        """This function tells the bootcamps within BootcampsIneuron class"""
         print("This bootcamp will start in september")
 
 
 class FsdsIneuron(BootcampsIneuron,CoursesIneuron,IneuronEducation):
 
     def fsdsbootcamp(self):
+        """This function tells the bootcamps within FsdsIneuron class"""
         print("FSDS Bootcamp started on 7th May by Mr. Sudhanshu Kumar")
         super().__init__()
 
@@ -327,6 +351,7 @@ class HofIneuron:
         super().__init__()
 
     def halloffame(self):
+        """This function tells the no. of famers within HofIneuron class"""
         print(f"There a total of {self.__hof} achievers in hall of fame!")
 
 
@@ -337,12 +362,14 @@ class JobGuaranteeProg:
         print("Ineuron has Job Guarantee Program but there is a criteria.")
 
     def hired(self):
+        """This function tells the hired stats within JobGuaranteeProg class"""
         print("Every years many people get hired via Ineuron")
 
 
 class Hired(HofIneuron,JobGuaranteeProg):
 
     def hired(self):
+        """This function tells person hiring status within Hired class"""
         print("Himanshu got hired in Microsoft!! Thanks to Ineuron")
         self._HofIneuron__hof += 1
 
