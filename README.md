@@ -6,4 +6,4 @@ Inheritence, Polymorphism & Method Overriding files has imported ClassIneuron pa
 
 Each concept file has 10 examples of their application.
 
-Public, Private & Protected concept has been well used in Polymorphism.
+Public, Private & Protected concept has been well used in Polymorphism. Also we have covered DATA HIDING aka ABSTRACTION within Polymorphism file.
